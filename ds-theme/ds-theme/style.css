@@ -1,0 +1,158 @@
+/*
+Theme Name: DS Theme
+Theme URI: https://digitalschool.com
+Author: Digital School
+Author URI: https://digitalschool.com
+Description: A basic custom theme for learning purposes.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ds-theme
+Tags: education, basic-theme
+*/
+
+/* Basic styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 40px;
+}
+
+footer {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+article {
+  padding: 20px;
+  margin: 20px 0;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+
+
+
+/* Slider */
+
+.slider{
+    width:100%;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.slides{
+    display:flex;
+    animation: slide 12s infinite;
+}
+
+.slides img{
+    width:100%;
+}
+
+@keyframes slide{
+    0%{transform:translateX(0)}
+    33%{transform:translateX(-100%)}
+    66%{transform:translateX(-200%)}
+    100%{transform:translateX(0)}
+}
+
+/* Rounded Corners */
+
+.rounded-box{
+    height:120px;
+    background:#4CAF50;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+
+
+/* Background */
+
+.background-box{
+    height:150px;
+    background-image:url(images/bg.jpg);
+    background-size:cover;
+    background-position:center;
+    border-radius:15px;
+}
+
+/* Shadows */
+
+.shadow-card{
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Professional Page Styles */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    opacity: 0.1;
+}
+
+.hero-section h1, .hero-section p {
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.btn {
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
