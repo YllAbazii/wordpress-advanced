@@ -1,0 +1,10 @@
+.hero {
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(45deg, #111, #444);
+    color: #00ffcc;
+}
+
+h3 {
+    color: #007BFF;
+}
