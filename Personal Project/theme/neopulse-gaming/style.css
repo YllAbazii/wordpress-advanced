@@ -1,0 +1,27 @@
+/*
+Theme Name: NeoPulse Gaming
+Theme URI: https://example.com/neopulse-gaming
+Author: Your Name
+Author URI: https://example.com
+Description: A modern, sleek gaming WordPress theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: neopulse
+Tags: dark, responsive, two-columns, custom-logo
+*/
+
+/* Import the main stylesheet */
+@import url("assets/css/style.css");
+/*
+Theme Name: NeoPulse Gaming
+Author: ChatGPT
+Version: 1.0
+Description: Professional Gaming Theme
+*/
+
+body{
+    background:#0b0b0f;
+    color:white;
+    font-family:Arial,sans-serif;
+}
